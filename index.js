@@ -3,10 +3,10 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 const { Pool } = require('pg');
 const pool = new Pool({
-  connectionString: 'postgres://postgres:Jojek2020.@localhost/rectangle'
-  /*ssl: {
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
     rejectUnauthorized: false
-  }*/
+  }
 })
 
 express()
