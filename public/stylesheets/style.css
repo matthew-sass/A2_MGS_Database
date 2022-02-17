@@ -1,0 +1,31 @@
+ul{
+    list-style-type: none;
+}
+button.link { 
+    background:none; 
+    border:none;
+    cursor: pointer;
+    color: blue;
+    text-decoration:underline;
+}
+
+.left{
+    width: 138px;
+    float: left;
+    outline: solid 2px grey;
+    padding: 5px;
+}
+
+.right{
+    width: 140px;
+    margin-left: 150px;
+    margin-bottom: 2px;
+    outline: solid 2px grey;
+    padding: 5px;
+}
+
+.clear{
+    clear: both;
+}
+
+

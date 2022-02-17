@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"  href="/stylesheets/style.css">
+</head>
+<body>
+
+    <div class="container">
+    <h2>Rectangles</h2>
+
+    <ul>
+        <% results.forEach(function(r) { %>
+            <div class="left">
+                <form method="GET" action="/rectangle/edit/<%=r.id%>">
+                    <li><%= r.id %> | <button class="link" id="button" name="name" value="<%=r.id%>"><%= r.name %></button></li>
+                </form>
+            </div>
+            <div class="right">
+               <li><%= r.color %></li>
+            </div>
+            <div class="clear"></div>
+        
+        <% }); %>
+    </ul>
+    <form method="GET" action="/newrectangle">
+        <button id="createbutton" name="createnew">Create New Rectangle</button>
+    </form>
+    <br>
+    <form method="POST" action="/deleterectangle">
+        <input type="submit" value="Delete" onclick()="window.location.href = 'http://localhost:5000/rectanglesmain';">
+        <input type="number" id="deleteid" name="deleteid" placeholder="Input ID to Delete">
+    </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

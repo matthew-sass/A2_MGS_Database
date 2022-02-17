@@ -1,0 +1,29 @@
+.left{
+    width: 50px;
+    float: left;
+    padding: 5px;
+}
+
+.right{
+    width: 140px;
+    margin-left: 55px;
+    margin-bottom: 2px;
+    padding: 5px;
+}
+
+.clear{
+    clear: both;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    height: 20px;
+
+}
+
+input{
+    width: 120px;
+}
