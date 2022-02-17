@@ -113,7 +113,7 @@ express()
       res.render('pages/rectanglesedit', submitEditResults);
       submitEditClient.release();
     } catch (err){
-      res.send(err);
+      res.render('pages/errorPage');
     }
   })
   
