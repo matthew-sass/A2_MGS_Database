@@ -30,7 +30,7 @@ express()
   })
 
   .get('/errorPage', (req, res)=>{
-    res.render('pages/errorPage');
+    res.render('pages/errorpage');
   })
 
   .get('/rectangle/:id', async (req, res)=>{
@@ -42,7 +42,7 @@ express()
       res.render('pages/rectanglesinfo', rectanglesInfo);
       rectanglesInfoClient.release();
     } catch (err){
-      res.render('pages/errorPage');
+      res.render('pages/errorpage');
     }
   })
   .get('/rectangle/edit/:id', async (req, res)=>{
@@ -54,7 +54,7 @@ express()
       res.render('pages/rectanglesedit', rectanglesEditInfo);
       rectanglesEditInfoClient.release();
     } catch (err){
-      res.render('pages/errorPage');
+      res.render('pages/errorpage');
     }
   })
   .get('/newrectangle', (req, res)=>{
@@ -79,7 +79,7 @@ express()
       res.render('pages/newrectangle', results);
       rectanglesAddRectangleClient.release();
     } catch (err){
-      res.render('pages/errorPage');
+      res.render('pages/errorpage');
     }
   })
 
@@ -94,7 +94,7 @@ express()
       res.render('pages/rectanglesmain', results);
       rectanglesDeleteRectangleClient.release();
     } catch (err){
-      res.render('pages/errorPage');
+      res.render('pages/errorpage');
     }
   })
 
@@ -113,7 +113,7 @@ express()
       res.render('pages/rectanglesedit', submitEditResults);
       submitEditClient.release();
     } catch (err){
-      res.render('pages/errorPage');
+      res.render('pages/errorpage');
     }
   })
   
